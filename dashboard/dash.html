@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Data Visualization Dashboard</title>
+<link rel="stylesheet" href="./dash.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  
+    <div class="navbar">
+      <div class="buttons">
+        <a href="#">Login</a>
+        <button type="button">Create an account</button>
+      </div>
+    </div>
+    <div class="homebar">
+      <a href="#home" class="active">Home</a>
+      <a href="#about">System</a>
+      <a href="#services">Drive</a>
+      <a href="#contact">Content</a>
+      <a href="#contact">Analytics</a>
+      <a href="#contact">Earn</a>
+  </div>
+
+  <div class="container">
+    <h1>Data Visualization Dashboard</h1>
+  <div class="row">
+      <div class="col">
+        <canvas id="pageViewsChart"></canvas>
+      </div>
+
+      <div class="col">
+        <canvas id="visitorSessionsChart"></canvas>
+      </div> 
+  </div>
+
+    <div class="row">
+      <div class="col">
+        <canvas id="pageViewsByDeviceChart"></canvas>
+      </div>
+      <div class="col">
+        <canvas id="pageViewsByChannelChart"></canvas>
+      </div>
+    </div>
+  </div>
+
+  <script src="./dash.js"></script>
+</body>
+</html>
+
